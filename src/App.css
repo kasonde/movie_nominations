@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;900&display=swap');
+
+:root{
+  --accent: #FFA726;
+  --bg: #333333;
+  --bg-dark: #111;
+  --fg-text: #FFF;
+}
+
+
+body{
+  background-color: var(--bg-dark);
+  width: 100vw;
+  height: 100vh;
+  font-family: 'Poppins', sans-serif;
+}
+
+#main{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+}
+
+#search-section{
+  flex: 1;
+}
+
+#search-section header{
+  margin-top: 2rem;
+}
+
+#search-section #main-page{
+  width: 700px;
+  margin: 2rem auto;
+}
+
+#search-section #main-page form input{
+  width: 100%;
+  font-size: 1.3em;
+  color: white;
+  background-color: rgba(255,255,255,0.1);
+  outline: none;
+  border: none;
+  border-bottom: 3px solid var(--accent);
+  padding: 20px;
+}
+
+#search-section #results{
+  color: white;
+}
+
+#search-section #results h3{
+  font-weight: bolder;
+  margin-top: 2rem;
+}
+
+#search-section #results .highlight{
+  background-color: var(--accent);
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  margin-left: 3px;
+}
+
+#search-section #results ul{
+  list-style: none;
+  display: block;
+  padding: 0px;
+  margin: 0px;
+}
+
+#search-section #results ul:last-child{
+  border:none;
+}
+
+#search-section #results .result{
+  width: 100%;
+  text-decoration: none;
+  background-color: black;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgba(255,255,255,.3);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: stretch;
+}
+
+.result img{
+  height: 60px;
+  margin-right: 20px;
+}
+
+.result h4 {
+  font-weight: bold;
+  flex: 1;
+  word-wrap: normal;
+}
+
+.result button{
+  cursor: pointer;
+  background-color: var(--accent);
+  color: white;
+  border: none;
+  font-size: 1em;
+  font-weight: bold;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 5px;
+}
+
+#nominations-section{
+  width: 25%;
+  background-color: var(--bg);
+}
+
