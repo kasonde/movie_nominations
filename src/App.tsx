@@ -18,13 +18,13 @@ const App = () =>{
         event.preventDefault(); // prevent the page from reloading on submit
         let url = new URL(`http://www.omdbapi.com/?apikey=${process.env.REACT_APP_API_KEY}`);
         url.searchParams.append("s", searchText)
-        let httpRequest = await fetch(url.toString()); // this return request information 
-        if (!httpRequest.ok){
-            alert("Unable to perform request");
-            return;
-        }
-        let responseData = await httpRequest.json();
-        console.log(responseData);
+        // let httpRequest = await fetch(url.toString()); // this return request information 
+        // if (!httpRequest.ok){
+        //     alert("Unable to perform request");
+        //     return;
+        // }
+        // let responseData = await httpRequest.json();
+        // console.log(responseData);
     }
 
     return <div id="main">
@@ -46,7 +46,9 @@ const App = () =>{
                 </div>
             </div>
         </div>
-        <div id="nominations-section"></div>
+        <div id="nominations-section">
+            <h3>Nominations</h3>
+        </div>
     </div>
 }
 export default App
